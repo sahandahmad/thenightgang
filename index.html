@@ -1,0 +1,127 @@
+<div class="audio-container">
+    <div class="audio-info">
+        <span>cls63</span>
+    </div>
+  <audio id="myAudio" loop autoplay>
+    <source src="cls63.mp3"audio/mpeg">
+</audio>
+    <div class="controls">
+        <button onclick="toggleAudio()" id="playBtn">
+            <span id="icon">▶</span>
+        </button>
+        <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.5">
+    </div>
+    <script>
+    const audio = document.getElementById("myAudio");
+    const playBtn = document.getElementById("playBtn");
+    const icon = document.getElementById("icon");
+    const volumeSlider = document.getElementById("volumeSlider");
+
+    function toggleAudio() {
+        if (audio.paused) {
+            audio.play().catch(function(error) {
+                console.log("Browser block krdwa: " + error);
+            });
+            icon.innerHTML = "⏸"; // Bo Pause
+        } else {
+            audio.pause();
+            icon.innerHTML = "▶"; // Bo Play
+        }
+    }
+
+    if(volumeSlider) {
+        volumeSlider.addEventListener("input", (e) => {
+            audio.volume = e.target.value;
+        });
+    }
+</script>
+</div>
+<div class="code-bg">
+  <div class="content">
+    <h1>Welcome</h1>
+    <p>To The Night Gang</p>
+  </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE NIGHT GANG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="content">
+        <br> 
+    <h2>ABOUT US</h2>
+<h4>یەکێکە لە گانگە ناسراوەکانی  کوردستان ڕۆیاڵ ،</h4>
+<h4>کە لە 9/8/2025 دامەزراوە. لەو ڕۆژەوە تا ئێستا، ئەم گانگە هێز و ناوبانگی زیاتر بەدەست هێناوە.<h4>
+<h4>هەتا ئێستا 2 ئیڤێنتی گەورەیان بە سەرکەوتوویی تەواو کردووە لە کوردستان ڕۆیاڵ سیتی، کە نیشانی هێز و یەکگرتوویی  و ئامادەبوونیانە.<h4></h4>
+    <br> <br> <br> <br> <br>
+    <h1>STAFF GANG</h1>
+    <div class="staff-container">
+    <div class="staff-card">
+        <span class="role">Leader</span>
+        <span class="name">Xala Sya</span>
+    </div>
+    <div class="staff-card">
+        <span class="role">Adminstrator</span>
+        <span class="name">Mahdy</span>
+    </div>
+     <div class="staff-card">
+        <span class="role">Manager</span>
+        <span class="name">Pollat</span>
+    </div>
+     <div class="staff-card">
+        <span class="role">Helper</span>
+        <span class="name">Shexa</span>
+    </div>
+    <div class="staff-card">
+        <span class="role">Helper</span>
+        <span class="name">Kako</span>
+    </div>
+    <br>  <br>  <br>  <br>  <br>
+    <h2>GANG RULES </h2>
+    <h5>١-بێرێزی کردن وارن دەکرێت</h5>
+<h5>٢-ژاوە ژاو نانەوەی ناو ڤۆیس ١ سەعات میوت دەکرێت بۆ جاری دووەم وارن دەکرێت</h5>
+<h5>٣-دژایەتی کردنی هەر گانگ و هەر جۆپێک وارن دەکرێیت</h5>
+<h5>٤-جنێودانی خێزانی بە هەر کەسێک یان هەر گانگ و جۆپێک وارن دەکرێت لە گانگ</h5>
+<h5>٥-گوێنەدان بە پلە بەرز وارن دەکرێیت</h5>
+<h5>٦-مەرجە کە داخلی فایڤم بیت ئەبێت لە ڤۆیسی گانگ 
+بیت</h5>
+    <h5>٧-هەر کەسێک هاتا ٢ جار بەژداری ئیڤێنت نەکات دەردەکرێت لە گانگ</h5>
+    <h5>٨-لە کاتی ئیڤێنتدا هەر کەسێک ببێتە هۆی تێکدەری پلەیەر وارن دەکرێت</h5>
+    <h5>٩-ئەکتیڤی رۆژانە لە ٣ سەعات کەمتر وارن دەکرێت</h5>
+    <h5>١٠-دەستکەوری شەڕ بۆ کەسەکە خۆیەتی</h5>
+    <h5>١١-هەر ئیڤێنتێک بەژداری بکەیت پارەی خۆت وەردەگری لە هەموو حەفتەکاندا</h5>
+    <h5>١٢-لە ٥ شەماندا مەعاش دەدرێت</h5>
+    <h5>١٣-ئەبێت رپ و ڕیدزۆن و رۆبێریوو هەبێت</h5>
+    <h5>١٤-سووبعەت کردن ئاساییە ئەگەر لە رادەیا بێت</h5>
+    <br> <br> <br> <br>
+    <h1>GANG TAG</h1>
+    <h4>DISCORD TAG: (nameᵀᴺᴳ)</h4>
+    <h4>FIVEM TAG: (TNG name)</h4>
+      <br> <br> <br> <br>
+    <h1>GALLARY<h1>
+    <div class="gallery">
+        <img src="https://cdn.discordapp.com/attachments/1484667612716597310/1484709904982867979/Cfx.re_C_Users_dssto_AppData_Local_FiveM_FiveM.exe_Screenshot_2026.03.13_-_00.25.53.94.png?ex=69ec0a59&is=69eab8d9&hm=84ee810dd1625ccdaa68ef219860e350462248df8637ff8ca1403b8cff2244c5&" alt="Image 1">
+        <img src="https://media.discordapp.net/attachments/1484667612716597310/1484709907134677125/Cfx.jpg?ex=69ec0a5a&is=69eab8da&hm=be67cef24fc727da3fa10636548e2922a5dbe01865dd3315e24a0c5c8188e810&=&format=webp&width=1014&height=570" alt="Image 2">
+        <img src="https://media.discordapp.net/attachments/1484667612716597310/1484710420232015892/awdawdaw.png?ex=69ec0ad4&is=69eab954&hm=b8c7d9849fc4e542ce7fd35013ce7f05b9bbf7dc285562d2dbcd3257d0e114a0&=&format=webp&quality=lossless&width=1128&height=534" alt="Image 3">
+        <img src="https://media.discordapp.net/attachments/1484667612716597310/1484795076520575208/Screenshot_20260315-072502.jpg?ex=69ec59ac&is=69eb082c&hm=a1a35e91ae0609ca50efd3ab40b2ef4478620dba5d7e9348165bb01337c4700c&=&format=webp&width=1012&height=571" alt="Image 4">
+        <img src="https://media.discordapp.net/attachments/1484667612716597310/1484795078198165635/Desktop_Screenshot_2026.01.25_-_21.22.02.52.png?ex=69ec59ac&is=69eb082c&hm=d3b7f5a00ba6ce3df47f4879361e3f6ef17c12329f9fdbbec63c2c3c808cc045&=&format=webp&quality=lossless&width=1014&height=570" alt="Image 5">
+        <img src="https://media.discordapp.net/attachments/1484667612716597310/1495139433807347773/image.png?ex=69ec68db&is=69eb175b&hm=c4acffc8d2a4bbd9b5f0ef0e032fe7d0171572a8e646f351d4d93e562d41d504&=&format=webp&quality=lossless&width=878&height=571" alt="Image 6">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1492903039508549792/IMG_20260412_180305_426.jpg?ex=69ec2f0d&is=69eadd8d&hm=c2a1b83cc9a1eb8f21d0944cab52ada78486fec8b17f4d326a24d4014dd615f9&=&format=webp&width=1045&height=571" alt="Image 7">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1492266015848005704/image.png?ex=69ec80c7&is=69eb2f47&hm=d4ef863fc6103c25b8ef111334f340f4e9c03540fce33bc373fb44391a568285&=&format=webp&quality=lossless&width=865&height=571" alt="Image 8">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1490117332998160394/Screenshot_2026-04-04_033451.png?ex=69ec98a9&is=69eb4729&hm=7dc76f6d80ee287da35b98402725f923cb8590bf69abeac5ac2ea514d590ea4d&=&format=webp&quality=lossless&width=773&height=571" alt="Image 9">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1484802715652718672/5FAF0096-DFCB-4733-8809-583266F96CBB.png?ex=69ec60c9&is=69eb0f49&hm=4c379f0c0bf556ece43df5ef2880c2d3e6d5cd3f6e550493f3e476b5aae06f4e&=&format=webp&quality=lossless&width=857&height=571" alt="Image 10">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1484710526398496859/DZMG2227.png?ex=69ec0aee&is=69eab96e&hm=1f2faeace2b5301f21fb3deacac55406926e8c1fb044cc75759f69b6856e840d&=&format=webp&quality=lossless&width=1014&height=570" alt="Image 11">
+<img src="https://media.discordapp.net/attachments/1484667612716597310/1484710422627221718/IMG_20260202_232906_899.png?ex=69ec0ad5&is=69eab955&hm=ee9e6acbe01a626b4ff0592ba9a7962922a89e7d1284fdb07cf69b34e3501083&=&format=webp&quality=lossless&width=1711&height=864" alt="Image 12">
+    </div>
+
+</body>
+</html>
+<div class="header-container">
+    <a href="https://discord.gg/MJ5ERSNvtf" target="_blank" class="discord-btn">
+        Join Discord
+    </a>
+    <h1 class="title">THE NIGHT GANG</h1>
+</div>
